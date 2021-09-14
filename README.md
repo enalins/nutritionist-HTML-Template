@@ -11,7 +11,7 @@
   <li>Fix mobile;</li>
   <li>Set up animations;</li>
   <li>Set up form validations</li>
-<ul>
+</ul>
 <br>
 <h2>Pages</h2>
 <ul>
@@ -20,4 +20,4 @@
   <li>Contact;</li>
   <li>Blog;</li>
   <li>Blog Post</li>
-<ul>
+</ul>
