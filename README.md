@@ -8,6 +8,7 @@
   <li>Build page: Contact;</li>
   <li>Build page: Blog;</li>
   <li>Build page: Blog Post;</li>
+  <li>Fix mobile;</li>
   <li>Set up animations;</li>
   <li>Set up form validations</li>
 <ul>
