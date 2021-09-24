@@ -3,7 +3,6 @@
 <br>
 <h2>To do</h2>
 <ul>
-  <li>Build page: Homepage;</li>
   <li>Build page: About;</li>
   <li>Build page: Contact;</li>
   <li>Build page: Blog;</li>

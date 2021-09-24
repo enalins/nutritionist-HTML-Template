@@ -45,14 +45,18 @@
     <div class="container--custom booking__block">
       <h2>Book an Appointment</h2>
       <div class="inline-form">
-        <label for="name">Full Name:</label>
-        <label for="age">Age:</label>
-        <label for="date">Date:</label>
-      </div>
-      <div class="inline-form">
-        <input type="text" name="name" id="name" placeholder="John Doe">
-        <input type="text" name="age" id="age" placeholder="Your age">
-        <input type="text" name="date" id="date" placeholder="Date of the appointment">
+        <div class="form-block">
+          <label for="appointment-name">Full Name:</label>
+          <input type="text" name="appointment-name" id="appointment-name" placeholder="John Doe">
+        </div>
+        <div class="form-block">
+          <label for="appointment-age">Age:</label>
+          <input type="text" name="appointment-age" id="appointment-age" placeholder="Your age">
+        </div>
+        <div class="form-block">
+          <label for="appointment-date">Date:</label>
+          <input type="text" name="appointment-date" id="appointment-date" placeholder="Date of the appointment">
+        </div>
         <button type="submit" class="btn-regular">Book an Appointment</button>
       </div>
     </div>
@@ -61,7 +65,9 @@
   <!-- ABOUT SECTION -->
   <section>
     <div class="container--custom gtk">
-      <div class="gtk__img"></div>
+      <div class="gtk__img">
+        <img src="./img/about-1.webp" alt="">
+      </div>
       <div class="gtk__text">
         <h2 class="sec-title">Get to know me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nisl nunc, dictum vitae condimentum eget, auctor ac felis.</p>
@@ -135,6 +141,7 @@
             <label for="contact-message">Message</label>
             <textarea name="contact-message" id="contact-message" placeholder="Your message here..."></textarea>
           </div>
+          <button type="submit" class="btn-regular">Book an Appointment</button>
         </form>
       </div>
     </div>
@@ -178,7 +185,7 @@
   </section>
 
   <section>
-    <div class="container--custom blog">
+    <div class="container blog">
       <h2 class="sec-title">Recent Posts</h2>
       <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
@@ -245,6 +252,29 @@
     </div>
   </section>
 
+  <section class="newsletter">
+    <div class="container">
+      <h2 class="sec-title">Sign in to our newsletter and never miss a thing</h2>
+      <div class="inline-form">
+        <div class="form-block">
+          <input type="email" name="news-mail" id="news-mail" placeholder="Ex.: john_doe@mail.com">
+        </div>
+        <button type="submit" class="btn-regular">Sign in</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <h5>Nutritionist Dr. Anthony  - ©  Copyright - All rights reserved 2020</h5>
+
+      <ul class="icon-list">
+        <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+      </ul>
+    </div>
+  </footer>
 
   <!-- SCRIPTS -->
   <script src="./js/jquery.min.js"></script>
