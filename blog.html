@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Dr. Anthony - Nutritionist</title>
+
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./css/global-style.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <header id="topHeader">
+    <div class="header-mobile">
+      <img src="./img/logo.svg" alt="" class="logo">
+      <button type="button" class="menu-toggle" id="menuToggle"><ion-icon name="menu-outline"></ion-icon></button>
+    </div>
+
+    <div class="container--custom header">
+      <img src="./img/logo.svg" alt="" class="logo">
+
+      <nav class="navigation">
+        <li class="navigation__link"><a href="index.html">Home</a></li>
+        <li class="navigation__link"><a href="#appointment">Book an Appointment</a></li>
+        <li class="navigation__link"><a href="about.html">About</a></li>
+        <li class="navigation__link"><a href="contact.html">Contact</a></li>
+        <li class="navigation__link active"><a href="blog.html">Blog</a></li>
+      </nav>
+
+      <button class="close-menu" id="closeMenu"><ion-icon name="close-outline"></ion-icon></button>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <section class="breadcrumb">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb__list">
+          <li class="breadcrumb__list__item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb__list__item active" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+      <h1 class="breadcrumb__title">Blog</h1>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="container">
+      <div class="blog__filter">
+
+        <div class="filter-block">
+          <h2>Search Articles</h2>
+          <form action="#">
+            <div class="inline-form">
+              <div class="form-block">
+                <input type="text" name="article-search" id="article-search" placeholder="Search articles">
+              </div>
+              <button type="submit" class="btn-regular"><ion-icon name="search-outline"></ion-icon></button>
+            </div>
+          </form>
+        </div>
+
+        <div class="filter-block">
+          <h2>Sort by Date</h2>
+          <div class="blog__filter__date">
+            <div class="blog__filter__date__select">August of 2020 <ion-icon name="chevron-down-outline"></ion-icon></div>
+            <ul>
+              <li><a href="#">27th Sunday</a></li>
+              <li><a href="#">16th Monday</a></li>
+              <li><a href="#">15th Sunday</a></li>
+              <li><a href="#">12th Thursday</a></li>
+              <li><a href="#">05th Friday</a></li>
+            </ul>
+          </div>
+          <div class="blog__filter__date">
+            <div class="blog__filter__date__select">July of 2020 <ion-icon name="chevron-down-outline"></ion-icon></div>
+            <ul>
+              <li><a href="#">27th Sunday</a></li>
+              <li><a href="#">16th Monday</a></li>
+              <li><a href="#">15th Sunday</a></li>
+              <li><a href="#">12th Thursday</a></li>
+              <li><a href="#">05th Friday</a></li>
+            </ul>
+          </div>
+          <div class="blog__filter__date">
+            <div class="blog__filter__date__select">June of 2020 <ion-icon name="chevron-down-outline"></ion-icon></div>
+            <ul>
+              <li><a href="#">27th Sunday</a></li>
+              <li><a href="#">16th Monday</a></li>
+              <li><a href="#">15th Sunday</a></li>
+              <li><a href="#">12th Thursday</a></li>
+              <li><a href="#">05th Friday</a></li>
+            </ul>
+          </div>
+          <div class="blog__filter__date">
+            <div class="blog__filter__date__select">March of 2020 <ion-icon name="chevron-down-outline"></ion-icon></div>
+            <ul>
+              <li><a href="#">27th Sunday</a></li>
+              <li><a href="#">16th Monday</a></li>
+              <li><a href="#">15th Sunday</a></li>
+              <li><a href="#">12th Thursday</a></li>
+              <li><a href="#">05th Friday</a></li>
+            </ul>
+          </div>
+          <div class="blog__filter__date">
+            <div class="blog__filter__date__select">April of 2020 <ion-icon name="chevron-down-outline"></ion-icon></div>
+            <ul>
+              <li><a href="#">27th Sunday</a></li>
+              <li><a href="#">16th Monday</a></li>
+              <li><a href="#">15th Sunday</a></li>
+              <li><a href="#">12th Thursday</a></li>
+              <li><a href="#">05th Friday</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="filter-block">
+          <h2>Latest Posts</h2>
+          <div class="latest-post">
+            <div class="latest-post__img">
+              <img src="./img/blog-post/post-1.webp" alt="">
+            </div>
+            <div class="latest-post__title">Post Title</div>
+            <div class="latest-post__date">10/02/2020</div>
+            <div class="standard-link">Read More</div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <h5>Nutritionist Dr. Anthony  - ©  Copyright - All rights reserved 2020</h5>
+
+      <ul class="icon-list">
+        <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="./js/jquery.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./js/global-script.js"></script>
+  <script>
+    //ACCORDION
+    $(function(){
+      (function(){
+
+        var collapsedHeight = $('.blog__filter__date ul').css('maxHeight');
+    
+        $('.blog__filter__date ul').each(function(){
+          var $this = $(this);
+
+          $this.data('natural', $this[0].scrollHeight);
+        });
+
+        $('.blog__filter__date__select').click(function(){
+          var $parent = $(this).parent().eq(0)
+          var $story = $(this).siblings('ul').eq(0)
+          if ($parent.hasClass('active')) {
+            $story.animate({'maxHeight': collapsedHeight}, 280);
+            $parent.removeClass('active');
+          }
+          else {
+            $story.animate({'maxHeight': $story.data('natural')}, 280);
+            $parent.addClass('active');
+          }
+        });
+
+      })();
+    });
+  </script>
+</body>
+</html>

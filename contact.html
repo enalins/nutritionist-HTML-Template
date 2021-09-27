@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Dr. Anthony - Nutritionist</title>
+
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./css/global-style.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <header id="topHeader">
+    <div class="header-mobile">
+      <img src="./img/logo.svg" alt="" class="logo">
+      <button type="button" class="menu-toggle" id="menuToggle"><ion-icon name="menu-outline"></ion-icon></button>
+    </div>
+
+    <div class="container--custom header">
+      <img src="./img/logo.svg" alt="" class="logo">
+
+      <nav class="navigation">
+        <li class="navigation__link"><a href="index.html">Home</a></li>
+        <li class="navigation__link"><a href="#appointment">Book an Appointment</a></li>
+        <li class="navigation__link"><a href="about.html">About</a></li>
+        <li class="navigation__link active"><a href="contact.html">Contact</a></li>
+        <li class="navigation__link"><a href="blog.html">Blog</a></li>
+      </nav>
+
+      <button class="close-menu" id="closeMenu"><ion-icon name="close-outline"></ion-icon></button>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <section class="breadcrumb">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb__list">
+          <li class="breadcrumb__list__item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb__list__item active" aria-current="page">Contact</li>
+        </ol>
+      </nav>
+      <h1 class="breadcrumb__title">Contact</h1>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section>
+    <div class="container--custom contact">
+      <div class="contact__img"></div>
+      <div class="contact__text">
+        <h2 class="sec-title">Get in touch</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <form action="#">
+          <div class="form-block">
+            <label for="contact-name">Full Name</label>
+            <input type="text" name="contact-name" id="contact-name" placeholder="Ex.: John Doe">
+          </div>
+          <div class="form-block">
+            <label for="contact-email">E-Mail</label>
+            <input type="text" name="contact-email" id="contact-email" placeholder="Ex.: john_doe@mail.com">
+          </div>
+          <div class="form-block">
+            <label for="contact-message">Message</label>
+            <textarea name="contact-message" id="contact-message" placeholder="Your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn-regular">Book an Appointment</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO -->
+  <section class="contact-info">
+    <div class="container--custom contact-info__block">
+
+      <div class="contact-info__block__single">
+        <div class="contact-info__block__single__icon">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <div class="contact-info__block__single__text">
+          <h3>E-Mail</h3>
+          <p>contact@mail.com</p>
+        </div>
+      </div>
+
+      <div class="contact-info__block__single">
+        <div class="contact-info__block__single__icon">
+          <ion-icon name="call-outline"></ion-icon>
+        </div>
+        <div class="contact-info__block__single__text">
+          <h3>Phone</h3>
+          <p>+1-202-555-0140</p>
+        </div>
+      </div>
+
+      <div class="contact-info__block__single">
+        <div class="contact-info__block__single__icon">
+          <ion-icon name="map-outline"></ion-icon>
+        </div>
+        <div class="contact-info__block__single__text">
+          <h3>Location</h3>
+          <p>1600 Amphitheatre Pkwy, Mountain View, EUA</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <h5>Nutritionist Dr. Anthony  - ©  Copyright - All rights reserved 2020</h5>
+
+      <ul class="icon-list">
+        <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./js/global-script.js"></script>
+</body>
+</html>

@@ -104,17 +104,23 @@ input:focus, input:focus-visible, textarea:focus, textarea:focus-visible {outlin
 .standard-link {color: var(--green); text-decoration: underline; transition: 0.28s ease;}
   .standard-link:hover {color: var(--dark-green);}
 
+.container--custom {
+  padding-left: calc(1rem + 15px);
+  padding-right: calc(1rem + 15px);
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (min-width: 576px) {
-  .container--custom {max-width: calc(540px + 2rem); padding-left: calc(1rem + 15px); padding-right: calc(1rem + 15px); margin-left: auto;margin-right: auto;}
+  .container--custom {max-width: calc(540px + 2rem);}
 }
 @media screen and (min-width: 768px) {
-  .container--custom {max-width: calc(720px + 2rem); padding-left: calc(1rem + 15px); padding-right: calc(1rem + 15px); margin-left: auto;margin-right: auto;}
+  .container--custom {max-width: calc(720px + 2rem);}
 }
 @media screen and (min-width: 992px) {
-  .container--custom {max-width: calc(960px + 2rem); padding-left: calc(1rem + 15px); padding-right: calc(1rem + 15px); margin-left: auto;margin-right: auto;}
+  .container--custom {max-width: calc(960px + 2rem);}
 }
 @media screen and (min-width: 1200px) {
-  .container--custom {max-width: calc(1140px + 2rem); padding-left: calc(1rem + 15px); padding-right: calc(1rem + 15px); margin-left: auto;margin-right: auto;}
+  .container--custom {max-width: calc(1140px + 2rem);}
 }
 
 .container,
@@ -143,7 +149,7 @@ header {
   position: absolute;
   top: 2rem;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header {
@@ -158,13 +164,29 @@ header {
   .header .logo {
     height: 4.5rem;
   }
+  .header .close-menu {
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem; 
+    color: var(--dark-green); 
+    justify-content: center; 
+    align-items: center; 
+    border: solid 2px transparent; 
+    border-radius: var(--radius); 
+    background: transparent; 
+    transition: 0.28s ease; 
+    position: absolute; 
+    top: 1rem; 
+    right: 1rem;
+    display: none;
+  }
 
 .navigation {list-style: none;}
 .navigation__link {display: inline-block; position: relative;}
 .navigation__link::after {
   content: '';
   position: absolute;
-  bottom: -1rem;
+  bottom: -.5rem;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -180,10 +202,52 @@ header {
 .navigation__link.active::after {background: var(--green);}
 .navigation__link a:hover {color: var(--green); text-decoration: none;}
 
+.header-mobile {display: none; background: white; padding: 1rem;}
+  .header-mobile .logo {height: 3rem}
+  .header-mobile .menu-toggle {height: 3rem; width: 3rem; font-size: 2rem; color: var(--dark-green); display: flex; justify-content: center; align-items: center; border: solid 2px transparent; border-radius: var(--radius); background: transparent; transition: 0.28s ease;}
+    .header-mobile .menu-toggle:focus {border-color: var(--green);}
+
+/* [ BREADCRUMB ] */
+.breadcrumb {
+  padding: 11rem 0 4rem;
+  background: linear-gradient(135deg, black, rgba(0, 0, 0, 0.7), transparent);
+  position: relative;
+  text-align: center
+}
+  .breadcrumb::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+    background: url('../img/bg-hero-fruits.jpg') no-repeat center;
+    background-size: cover;
+  }
+.breadcrumb__list {
+  list-style: none;
+}
+.breadcrumb__list__item, .breadcrumb__list__item a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+.breadcrumb__list__item + .breadcrumb__list__item::before {
+  content: '/';
+  display: inline-block;
+  position: relative;
+  margin: 0 .5rem;
+}
+.breadcrumb__title {
+  color: white
+}
+
 /* [ BANNER HERO ] */
 .b-hero {
   padding: 11rem 0 7rem;
-  background: linear-gradient(135deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.7), transparent);
+  background: linear-gradient(135deg, black, rgba(0, 0, 0, 0.7), transparent);
   position: relative;
 }
   .b-hero::before {
@@ -229,6 +293,9 @@ header {
 .booking__block .inline-form {
   grid-template-columns: 25% 25% 25% 25%;
 }
+  .booking__block .inline-form .btn-regular{
+    padding: calc(0.7rem - 1.5px) 1.5rem;
+  }
 
 /* [ GET TO KNOW ME ] */
 .gtk {
@@ -280,9 +347,19 @@ header {
 .inst__grid__img {
   grid-area: img;
   height: max(50vh, 500px);
-  background: url('../img/about-2.webp') no-repeat center top;
-  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
+  .inst__grid__img img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
 .inst__grid__text {
   grid-area: text;
   background: white;
@@ -313,7 +390,7 @@ header {
   position: relative;
   background-color: white;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
   .inst__icons__single__icon ion-icon {
     font-size: 70px;
@@ -377,8 +454,6 @@ header {
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-width: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem;
   display: grid;
   grid-template-areas: 'icon text';
   grid-template-columns: 80px auto;
@@ -386,7 +461,7 @@ header {
 }
 .contact-info__block__single__icon {
   width: 80px;
-  padding-top: 80px;
+  height: 80px;
   position: relative;
   background-color: var(--light-green);
   border-radius: 50%;
@@ -478,7 +553,7 @@ header {
 /* [ NEWSLETTER ] */
 .newsletter {
   padding: 4rem 0;
-  background: url('../img/news-background.jpg') no-repeat center;
+  background: url('../img/news-background.webp') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   box-shadow: inset 0 0 0 10000px rgba(0,0,0,.3);
@@ -491,13 +566,217 @@ header {
     color: white;
   }
 
+/* [ BLOG ] */
+.blog .container{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100%;
+}
+.filter-block {
+  margin-bottom: 1.5rem;
+}
+  .filter-block h2 {
+    margin-bottom: .5rem;
+  }
+.blog__filter__date {
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+  border-bottom: 2px solid var(--grey);
+}
+  .blog__filter__date + .blog__filter__date {
+    margin-top: 0.5rem
+  }
+  .blog__filter__date.active .blog__filter__date__select, .blog__filter__date:hover .blog__filter__date__select {
+    background-color: var(--grey);
+  }
+  .blog__filter__date.active {
+    border: 2px solid var(--grey);
+  }
+
+.blog__filter__date__select {
+  padding: 0.5rem;
+  color: var(--text);
+  font-size: 1.1rem;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: nowrap;
+  transition: 0.28s ease;
+}
+  .blog__filter__date__select ion-icon {
+    margin-left: auto;
+    transition: 0.28s ease
+  }
+    .blog__filter__date.active .blog__filter__date__select ion-icon {
+      transform: rotate(180deg);
+    }
+  .blog__filter__date ul {
+    padding: 0 0.5rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.28s ease;
+  }
+    .blog__filter__date.active ul {
+      list-style: circle;
+      max-height: max-content;
+      overflow: hidden;
+      opacity: 1;
+    }
+    .blog__filter__date ul li::before {
+      display: none;
+    }
+      .blog__filter__date ul li a {
+        display: block;
+        padding: 0.5rem;
+        color: var(--text);
+        text-decoration: none;
+        transition: 0.28s ease;
+      }
+        .blog__filter__date ul li a:hover {
+          background-color: var(--grey);
+        }
+
+.latest-post {display: grid; grid-template-columns: 30% 70%; grid-template-rows: 100%; gap: 1rem;}
+.latest-post__img {width: 100%; padding-top: 100%; position: relative; overflow: hidden;}
+  .latest-post__img img {width: 100%; height: auto; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;}
+.latest-post__title {font-size: 1.3rem; font-weight: 500;}
+.latest-post__date {font-size: 0.85rem; font-style: italic;}
+
 /* [ FOOTER ] */
 footer {background: var(--grey); padding: 0.5rem 0;}
   footer .container {display: grid; grid-template-columns: auto auto; grid-template-rows: 100%;}
   footer h5 {line-height: 2.5;}
-  footer .icon-list {list-style: none;}
+  footer .icon-list {list-style: none; max-width: max-content; margin-left: auto;}
     footer .icon-list li {display: inline-block;}
     footer .icon-list li+li {margin-left: 1rem;}
       footer .icon-list li a {color: var(--text); text-decoration: none; font-size: 1.5rem; transition: 0.28s ease;}
         footer .icon-list li a ion-icon {margin-bottom: -5px;}
         footer .icon-list li a:hover {color: var(--dark-green); text-decoration: none; cursor: pointer}
+
+@media screen and (max-width: 992px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  /* [ HEADER ] */
+  header {
+    top: 0;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+    display: none;
+    opacity: 0;
+    transition: 0.28s ease;
+  }
+  .header {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 90vw;
+    height: 100vh;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 2rem;
+    z-index: 1;
+    transition: 0.28s ease;
+  }
+    header.mobileMenu::before {
+      display: block;
+      opacity: 1;
+    }
+    .mobileMenu .header {left: 0;}
+    .header .logo {height: 3.5rem;}
+  .navigation__link {display: block; position: relative; max-width: max-content;}
+  .navigation__link::after {top: 0; bottom: 0; left: unset; right: -1rem; margin: auto 0;}
+  .navigation__link + .navigation__link {margin-left: 0; margin-top: 1rem}
+  .header-mobile {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .header .close-menu {
+    display: flex;
+  }
+
+  /* [ BANNER HERO ] */
+  .b-hero {padding: 7rem 0 6rem;}
+  
+  /* [ BREADCRUMB ] */
+  .breadcrumb {padding: 7rem 0 3rem;}
+  
+  /* [ BOOK AN APPOINTMENT ] */
+  .booking__block .inline-form {grid-template-columns: 50% 50%;}
+  .booking__block .inline-form .form-block {margin-top: 1rem;}
+  .booking__block .inline-form .form-block input {border-top-right-radius: var(--radius); border-bottom-right-radius: var(--radius);}
+  .booking__block .inline-form .form-block:first-child input, .booking__block .inline-form .form-block:nth-child(3n) input  {border-radius: var(--radius) 0 0 var(--radius);}
+
+  /* [ BLOG ] */
+  .blog .col {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 1rem;
+  }
+
+  /* [ INSTITUTIONAL ] */
+  .inst__icons__single {width: 50%; margin-bottom: 2rem;}
+}
+
+@media screen and (max-width: 576px) {
+  /* [ BANNER HERO ] */
+  .b-hero {background: rgba(0, 0, 0, 0.7);}
+  .b-hero__title {font-size: 2.8rem;}
+  .b-hero__text {width: 100%;}
+  
+  /* [ BOOK AN APPOINTMENT ] */
+  .booking {padding: 0 1rem;}
+  .booking h2 {margin-bottom: 1rem; line-height: 1;}
+  .booking__block .inline-form {grid-template-columns: 100%; gap: 1rem;}
+  .booking__block .inline-form .form-block input {border-radius: var(--radius);}
+  .booking__block .inline-form .btn-regular {border-radius: var(--radius);}
+
+  /* [ GET TO KNOW ME ] */
+  .gtk {grid-template-columns: 100%; grid-template-areas: 'img' 'text';}
+  .gtk__img {height: auto; padding-top: 100%;}
+  .gtk__img img {margin: 0}
+  .gtk__text {margin: -10% 5% 0 -5%}
+
+  /* [ INSTITUTIONAL ] */
+  .inst__grid {grid-template-columns: 100%; grid-template-areas: 'text' 'img';}
+  .inst__grid__img {height: auto; padding-top: 100%;}
+  .inst__grid__img img {margin: 0}
+
+  .inst__icons__single {width: 100%; margin-bottom: 2rem;}
+
+  /* [ CONTACT ] */
+  .contact {grid-template-columns: 100%; grid-template-areas: 'img' 'text';}
+  .contact__img {margin: 0 -5% -10% -5%; height: auto; padding-top: 100%;}
+  .contact__text {padding: calc(10% + 2rem) 2rem 2rem 2rem;}
+  .contact__text .btn-regular {width: 100%;}
+  
+  .contact-info {padding: 3rem 1rem;}
+  .contact-info__block {gap: 1rem;}
+
+  /* [ BLOG ] */
+  .blog .col {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* [ FOOTER ] */
+  footer .container {grid-template-columns: 100%;}
+  footer h5 {line-height: 1.7; text-align: center;}
+  footer .icon-list {margin-right: auto;}
+}
