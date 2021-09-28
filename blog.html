@@ -46,9 +46,10 @@
     </div>
   </section>
 
-  <section class="blog">
+  <section class="blog" id="blogFilter">
     <div class="container">
-      <div class="blog__filter">
+      <div class="blog__filter left">
+        <button class="close-menu" id="closeFilter"><ion-icon name="close-outline"></ion-icon></button>
 
         <div class="filter-block">
           <h2>Search Articles</h2>
@@ -118,16 +119,224 @@
 
         <div class="filter-block">
           <h2>Latest Posts</h2>
+
           <div class="latest-post">
             <div class="latest-post__img">
               <img src="./img/blog-post/post-1.webp" alt="">
             </div>
-            <div class="latest-post__title">Post Title</div>
-            <div class="latest-post__date">10/02/2020</div>
-            <div class="standard-link">Read More</div>
+            <div class="latest-post__text">
+              <div class="latest-post__title">Post Title</div>
+              <div class="latest-post__date">10/02/2020</div>
+              <div class="standard-link">Read More</div>
+            </div>
           </div>
+
+          <div class="latest-post">
+            <div class="latest-post__img">
+              <img src="./img/blog-post/post-2.webp" alt="">
+            </div>
+            <div class="latest-post__text">
+              <div class="latest-post__title">Post Title</div>
+              <div class="latest-post__date">10/02/2020</div>
+              <div class="standard-link">Read More</div>
+            </div>
+          </div>
+
+          <div class="latest-post">
+            <div class="latest-post__img">
+              <img src="./img/blog-post/post-3.webp" alt="">
+            </div>
+            <div class="latest-post__text">
+              <div class="latest-post__title">Post Title</div>
+              <div class="latest-post__date">10/02/2020</div>
+              <div class="standard-link">Read More</div>
+            </div>
+          </div>
+
+          <div class="latest-post">
+            <div class="latest-post__img">
+              <img src="./img/blog-post/post-4.webp" alt="">
+            </div>
+            <div class="latest-post__text">
+              <div class="latest-post__title">Post Title</div>
+              <div class="latest-post__date">10/02/2020</div>
+              <div class="standard-link">Read More</div>
+            </div>
+          </div>
+
+          <div class="latest-post">
+            <div class="latest-post__img">
+              <img src="./img/blog-post/post-1.webp" alt="">
+            </div>
+            <div class="latest-post__text">
+              <div class="latest-post__title">Post Title</div>
+              <div class="latest-post__date">10/02/2020</div>
+              <div class="standard-link">Read More</div>
+            </div>
+          </div>
+
         </div>
         
+      </div>
+      <div class="blog__list">
+        <button class="btn-regular" id="filterToggler">Filter Posts</button>
+
+        <div class="col">
+          <article class="blog__post">
+            <div class="blog__post__img">
+              <img src="./img/blog-post/post-1.webp" alt="">
+            </div>
+            <h3 class="blog__post__title">Post Title</h3>
+            <p class="blog__post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
+            <a href="" class="standard-link">Read More</a>
+    
+            <div class="blog__post__description">
+              10-02-2020 | John Doe
+            </div>
+          </article>
+        </div>
+  
+        <div class="col">
+          <article class="blog__post">
+            <div class="blog__post__img">
+              <img src="./img/blog-post/post-2.webp" alt="">
+            </div>
+            <h3 class="blog__post__title">Post Title</h3>
+            <p class="blog__post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
+            <a href="" class="standard-link">Read More</a>
+    
+            <div class="blog__post__description">
+              10-02-2020 | John Doe
+            </div>
+          </article>
+        </div>
+  
+        <div class="col">
+          <article class="blog__post">
+            <div class="blog__post__img">
+              <img src="./img/blog-post/post-3.webp" alt="">
+            </div>
+            <h3 class="blog__post__title">Post Title</h3>
+            <p class="blog__post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
+            <a href="" class="standard-link">Read More</a>
+    
+            <div class="blog__post__description">
+              10-02-2020 | John Doe
+            </div>
+          </article>
+        </div>
+  
+        <div class="col">
+          <article class="blog__post">
+            <div class="blog__post__img">
+              <img src="./img/blog-post/post-4.webp" alt="">
+            </div>
+            <h3 class="blog__post__title">Post Title</h3>
+            <p class="blog__post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
+            <a href="" class="standard-link">Read More</a>
+    
+            <div class="blog__post__description">
+              10-02-2020 | John Doe
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="blog__post">
+            <div class="blog__post__img">
+              <img src="./img/blog-post/post-1.webp" alt="">
+            </div>
+            <h3 class="blog__post__title">Post Title</h3>
+            <p class="blog__post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
+            <a href="" class="standard-link">Read More</a>
+    
+            <div class="blog__post__description">
+              10-02-2020 | John Doe
+            </div>
+          </article>
+        </div>
+  
+        <div class="col">
+          <article class="blog__post">
+            <div class="blog__post__img">
+              <img src="./img/blog-post/post-2.webp" alt="">
+            </div>
+            <h3 class="blog__post__title">Post Title</h3>
+            <p class="blog__post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
+            <a href="" class="standard-link">Read More</a>
+    
+            <div class="blog__post__description">
+              10-02-2020 | John Doe
+            </div>
+          </article>
+        </div>
+  
+        <div class="col">
+          <article class="blog__post">
+            <div class="blog__post__img">
+              <img src="./img/blog-post/post-3.webp" alt="">
+            </div>
+            <h3 class="blog__post__title">Post Title</h3>
+            <p class="blog__post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
+            <a href="" class="standard-link">Read More</a>
+    
+            <div class="blog__post__description">
+              10-02-2020 | John Doe
+            </div>
+          </article>
+        </div>
+  
+        <div class="col">
+          <article class="blog__post">
+            <div class="blog__post__img">
+              <img src="./img/blog-post/post-4.webp" alt="">
+            </div>
+            <h3 class="blog__post__title">Post Title</h3>
+            <p class="blog__post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
+            <a href="" class="standard-link">Read More</a>
+    
+            <div class="blog__post__description">
+              10-02-2020 | John Doe
+            </div>
+          </article>
+        </div>
+  
+        <div class="col">
+          <article class="blog__post">
+            <div class="blog__post__img">
+              <img src="./img/blog-post/post-1.webp" alt="">
+            </div>
+            <h3 class="blog__post__title">Post Title</h3>
+            <p class="blog__post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
+            <a href="" class="standard-link">Read More</a>
+    
+            <div class="blog__post__description">
+              10-02-2020 | John Doe
+            </div>
+          </article>
+        </div>
+
+        <div class="pagination">
+          <a href="#" class="pagination__link">Prev</a>
+          <a href="#" class="pagination__link">1</a>
+          <a href="#" class="pagination__link active">2</a>
+          <a href="#" class="pagination__link">3</a>
+          <a href="#" class="pagination__link">Next</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container">
+      <h2 class="sec-title">Sign in to our newsletter and never miss a thing</h2>
+      <div class="inline-form">
+        <div class="form-block">
+          <input type="email" name="news-mail" id="news-mail" placeholder="Ex.: john_doe@mail.com">
+        </div>
+        <button type="submit" class="btn-regular">Sign in</button>
       </div>
     </div>
   </section>
