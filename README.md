@@ -3,8 +3,8 @@
 <br>
 <h2>To do</h2>
 <ul>
-  <li>Set up animations;</li>
-  <li>Set up form validations</li>
+  <li>Set up form validations;</li>
+  <li>Load more comments on the blog post page</li>
 </ul>
 <br>
 <h2>Pages</h2>

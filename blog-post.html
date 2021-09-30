@@ -348,34 +348,5 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./js/global-script.js"></script>
-  <script>
-    //ACCORDION
-    $(function(){
-      (function(){
-
-        var collapsedHeight = $('.blog__filter__date ul').css('maxHeight');
-    
-        $('.blog__filter__date ul').each(function(){
-          var $this = $(this);
-
-          $this.data('natural', $this[0].scrollHeight);
-        });
-
-        $('.blog__filter__date__select').click(function(){
-          var $parent = $(this).parent().eq(0)
-          var $story = $(this).siblings('ul').eq(0)
-          if ($parent.hasClass('active')) {
-            $story.animate({'maxHeight': collapsedHeight}, 280);
-            $parent.removeClass('active');
-          }
-          else {
-            $story.animate({'maxHeight': $story.data('natural')}, 280);
-            $parent.addClass('active');
-          }
-        });
-
-      })();
-    });
-  </script>
 </body>
 </html>

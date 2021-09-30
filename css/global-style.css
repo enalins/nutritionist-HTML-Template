@@ -194,8 +194,8 @@ header {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.4rem;
+  height: 0.4rem;
   background: transparent;
   border-radius: 50%;
   transition: 0.28s ease;
@@ -882,7 +882,7 @@ footer {background: var(--grey); padding: 0.5rem 0;}
     grid-template-columns: 100%;
     grid-template-areas: 'list';
   }
-  .blog__list {
+  .blog__list, .blog.reverse .blog__list {
     margin: 0;
   }
   .blog__filter {

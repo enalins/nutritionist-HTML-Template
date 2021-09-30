@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
   <link rel="stylesheet" href="./css/global-style.css">
+  <link rel="stylesheet" href="./css/animations.css">
 </head>
 <body>
   <!-- NAVIGATION -->
@@ -49,8 +50,8 @@
   <!-- CONTACT FORM -->
   <section>
     <div class="container--custom contact">
-      <div class="contact__img"></div>
-      <div class="contact__text">
+      <div class="contact__img animation load-fadeLeft delay-1"></div>
+      <div class="contact__text animation load-fadeLeft">
         <h2 class="sec-title">Get in touch</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <form action="#">
@@ -74,7 +75,7 @@
 
   <!-- CONTACT INFO -->
   <section class="contact-info">
-    <div class="container--custom contact-info__block">
+    <div class="container--custom contact-info__block animation load-fadeRight">
 
       <div class="contact-info__block__single">
         <div class="contact-info__block__single__icon">
@@ -123,6 +124,7 @@
   </footer>
 
   <!-- SCRIPTS -->
+  <script src="./js/jquery.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./js/global-script.js"></script>

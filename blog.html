@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
   <link rel="stylesheet" href="./css/global-style.css">
+  <link rel="stylesheet" href="./css/animations.css">
 </head>
 <body>
   <!-- NAVIGATION -->
@@ -181,14 +182,14 @@
       <div class="blog__list">
         <button class="btn-regular" id="filterToggler">Filter Posts</button>
 
-        <article class="blog__single">
+        <article class="blog__single animation load-fadeUp">
           <div class="blog__single__img">
             <img src="./img/blog-post/post-1.webp" alt="">
           </div>
           <div class="blog__single__text">
             <h3 class="blog__single__title">Post Title</h3>
             <p class="blog__single__prev">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
-            <a href="" class="standard-link">Read More</a>
+            <a href="blog-post.html" class="standard-link">Read More</a>
     
             <div class="blog__single__description">
               10-02-2020 | John Doe
@@ -196,14 +197,14 @@
           </div>
         </article>
 
-        <article class="blog__single">
+        <article class="blog__single animation load-fadeUp">
           <div class="blog__single__img">
             <img src="./img/blog-post/post-2.webp" alt="">
           </div>
           <div class="blog__single__text">
             <h3 class="blog__single__title">Post Title</h3>
             <p class="blog__single__prev">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
-            <a href="" class="standard-link">Read More</a>
+            <a href="blog-post.html" class="standard-link">Read More</a>
     
             <div class="blog__single__description">
               10-02-2020 | John Doe
@@ -211,14 +212,14 @@
           </div>
         </article>
 
-        <article class="blog__single">
+        <article class="blog__single animation load-fadeUp">
           <div class="blog__single__img">
             <img src="./img/blog-post/post-3.webp" alt="">
           </div>
           <div class="blog__single__text">
             <h3 class="blog__single__title">Post Title</h3>
             <p class="blog__single__prev">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
-            <a href="" class="standard-link">Read More</a>
+            <a href="blog-post.html" class="standard-link">Read More</a>
     
             <div class="blog__single__description">
               10-02-2020 | John Doe
@@ -226,14 +227,14 @@
           </div>
         </article>
 
-        <article class="blog__single">
+        <article class="blog__single animation load-fadeUp">
           <div class="blog__single__img">
             <img src="./img/blog-post/post-4.webp" alt="">
           </div>
           <div class="blog__single__text">
             <h3 class="blog__single__title">Post Title</h3>
             <p class="blog__single__prev">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
-            <a href="" class="standard-link">Read More</a>
+            <a href="blog-post.html" class="standard-link">Read More</a>
     
             <div class="blog__single__description">
               10-02-2020 | John Doe
@@ -241,14 +242,14 @@
           </div>
         </article>
 
-        <article class="blog__single">
+        <article class="blog__single animation load-fadeUp">
           <div class="blog__single__img">
             <img src="./img/blog-post/post-1.webp" alt="">
           </div>
           <div class="blog__single__text">
             <h3 class="blog__single__title">Post Title</h3>
             <p class="blog__single__prev">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
-            <a href="" class="standard-link">Read More</a>
+            <a href="blog-post.html" class="standard-link">Read More</a>
     
             <div class="blog__single__description">
               10-02-2020 | John Doe
@@ -256,14 +257,14 @@
           </div>
         </article>
 
-        <article class="blog__single">
+        <article class="blog__single animation load-fadeUp">
           <div class="blog__single__img">
             <img src="./img/blog-post/post-2.webp" alt="">
           </div>
           <div class="blog__single__text">
             <h3 class="blog__single__title">Post Title</h3>
             <p class="blog__single__prev">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque.</p>
-            <a href="" class="standard-link">Read More</a>
+            <a href="blog-post.html" class="standard-link">Read More</a>
     
             <div class="blog__single__description">
               10-02-2020 | John Doe
@@ -314,34 +315,5 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./js/global-script.js"></script>
-  <script>
-    //ACCORDION
-    $(function(){
-      (function(){
-
-        var collapsedHeight = $('.blog__filter__date ul').css('maxHeight');
-    
-        $('.blog__filter__date ul').each(function(){
-          var $this = $(this);
-
-          $this.data('natural', $this[0].scrollHeight);
-        });
-
-        $('.blog__filter__date__select').click(function(){
-          var $parent = $(this).parent().eq(0)
-          var $story = $(this).siblings('ul').eq(0)
-          if ($parent.hasClass('active')) {
-            $story.animate({'maxHeight': collapsedHeight}, 280);
-            $parent.removeClass('active');
-          }
-          else {
-            $story.animate({'maxHeight': $story.data('natural')}, 280);
-            $parent.addClass('active');
-          }
-        });
-
-      })();
-    });
-  </script>
 </body>
 </html>

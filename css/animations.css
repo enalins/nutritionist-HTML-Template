@@ -1,0 +1,64 @@
+/* [ INITIAL STATE ] */
+
+  /* Fade */
+  .load-fade {opacity: 0;}
+  .load-fadeUp {opacity: 0; transform: translateY(100px)}
+  .load-fadeDown {opacity: 0; transform: translateY(-100px)}
+  .load-fadeLeft {opacity: 0; transform: translateX(-100px)}
+  .load-fadeRight {opacity: 0; transform: translateX(100px)}
+
+  /* Slide */
+  .load-slideUp {transform: translateY(100%)}
+  .load-slideDown {transform: translateY(-100%)}
+  .load-slideLeft {transform: translateX(-100%)}
+  .load-slideRight {transform: translateX(100%)}
+
+
+/* [ ANIMATIONS ] */
+
+  /* Fade */
+  @keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  @keyframes fadeUp {
+    0% {opacity: 0; transform: translateY(100px)}
+    100% {opacity: 1; transform: translateY(0)}
+  }
+  @keyframes fadeDown {
+    0% {opacity: 0; transform: translateY(-100px)}
+    100% {opacity: 1; transform: translateY(0)}
+  }
+  @keyframes fadeLeft {
+    0% {opacity: 0; transform: translateX(-100px)}
+    100% {opacity: 1; transform: translateX(0)}
+  }
+  @keyframes fadeRight {
+    0% {opacity: 0; transform: translateX(100px)}
+    100% {opacity: 1; transform: translateX(0)}
+  }
+
+  /* Slide */
+  @keyframes slideUp {
+    0% {transform: translateY(100%)}
+    100% {transform: translateY(0)}
+  }
+  @keyframes slideDown {
+    0% {transform: translateY(-100%)}
+    100% {transform: translateY(0)}
+  }
+  @keyframes slideeLeft {
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(0)}
+  }
+  @keyframes slideRight {
+    0% {transform: translateX(100%)}
+    100% {transform: translateX(0)}
+  }
+
+
+/* [ DELAY ] */
+  .delay-1 {animation-delay: .3s !important;}
+  .delay-2 {animation-delay: .6s !important;}
+  .delay-3 {animation-delay: .9s !important;}
+  .delay-4 {animation-delay: 1.2s !important;}

@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
   <link rel="stylesheet" href="./css/global-style.css">
+  <link rel="stylesheet" href="./css/animations.css">
 </head>
 <body>
   <!-- NAVIGATION -->
@@ -49,10 +50,10 @@
   <!-- ABOUT SECTION -->
   <section>
     <div class="container--custom gtk">
-      <div class="gtk__img">
+      <div class="gtk__img animation load-fadeRight">
         <img src="./img/about-1.webp" alt="">
       </div>
-      <div class="gtk__text">
+      <div class="gtk__text animation load-fadeRight delay-1">
         <h2 class="sec-title">Get to know me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vestibulum turpis, vitae placerat dui aliquam eget. Sed id lectus est. Praesent eget consectetur risus. Etiam turpis ligula, rhoncus sit amet ligula non, bibendum hendrerit neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nisl nunc, dictum vitae condimentum eget, auctor ac felis.</p>
       </div>
@@ -62,7 +63,7 @@
   <section class="inst">
     <div class="container--custom">
       <!-- INSTITUCIONAL -->
-      <div class="inst__grid">
+      <div class="inst__grid animation load-fadeUp">
         <div class="inst__grid__img">
           <img src="./img/about-2.webp" alt="">
         </div>
@@ -75,28 +76,31 @@
 
       <!-- LIST OF WORKS -->
       <div class="inst__icons">
-        <div class="inst__icons__single">
+        <div class="inst__icons__single animation load-fadeUp delay-1">
           <div class="inst__icons__single__icon">
             <ion-icon src="./img/icons/sports.svg"></ion-icon>
           </div>
           <h3>Sports</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="inst__icons__single">
+
+        <div class="inst__icons__single animation load-fadeUp delay-2">
           <div class="inst__icons__single__icon">
             <ion-icon src="./img/icons/body-building.svg"></ion-icon>
           </div>
           <h3>Body Building</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="inst__icons__single">
+
+        <div class="inst__icons__single animation load-fadeUp delay-3">
           <div class="inst__icons__single__icon">
             <ion-icon src="./img/icons/fitness.svg"></ion-icon>
           </div>
           <h3>Fitness</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="inst__icons__single">
+
+        <div class="inst__icons__single animation load-fadeUp delay-4">
           <div class="inst__icons__single__icon">
             <ion-icon src="./img/icons/health.svg"></ion-icon>
           </div>
@@ -134,6 +138,7 @@
   </footer>
 
   <!-- SCRIPTS -->
+  <script src="./js/jquery.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./js/global-script.js"></script>
