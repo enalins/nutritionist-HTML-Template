@@ -522,13 +522,11 @@ header {
   overflow: hidden;
 }
   .blog__post__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto 0;
-    width: 100%;
-    height: auto;
   }
 .blog__post__title {
   margin: 1rem 1rem 0.5rem;
@@ -615,6 +613,9 @@ header {
   .filter-block h2 {
     margin-bottom: .5rem;
   }
+  .filter-block .inline-form .btn-regular ion-icon {
+    --ionicon-stroke-width: 55px;
+  }
 .blog__filter__date__select {
   padding: 0.5rem;
   color: var(--text);
@@ -678,7 +679,7 @@ header {
 .latest-post {display: grid; grid-template-columns: 30% 70%; grid-template-rows: 100%; gap: 1rem;}
 .latest-post + .latest-post {margin-top: 1rem;}
 .latest-post__img {width: 100%; padding-top: 80%; position: relative; overflow: hidden; background: var(--grey);}
-  .latest-post__img img {position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 100%; height: auto; object-fit: cover; object-position: center; display: block;}
+  .latest-post__img img {position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; width: 100%; height: 100%; object-fit: cover;}
 .latest-post__title {font-size: 1.3rem; font-weight: 500;}
 .latest-post__date {font-size: 0.85rem; font-style: italic;}
 
@@ -712,16 +713,12 @@ header {
   .blog__single__img img {
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    min-width: 100%;
-    min-height: 100%;
+    margin: 0 auto;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
-    display: block;
   }
 .blog__single__text {
   display: flex;
